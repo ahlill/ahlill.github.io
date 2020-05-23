@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>penghitung bunga bank</title>
+</head>
+<body>
+
+<SCRIPT LENGUAGE="javascript">
+	// penghitung bunga tabungan
+
+function hitung(){
+var arrayHasil=[]
+
+if ((document.getElementById('saldo').value)=='' || (document.getElementById('bunga').value)=='' || (document.getElementById('waktu').value)==''){
+
+	alert('Data anda masih kosong')
+}else{
+
+for(var bulan=0; bulan<parseFloat(document.getElementById('waktu').value); bulan++){
+	 if(bulan==0){
+
+ 		var bunga=parseFloat(document.getElementById('bunga').value)/100
+		var saldo=parseFloat(document.getElementById('saldo').value)
+		var laba=saldo*bunga
+		var saldo=saldo+laba
+
+	}else{
+
+		var laba=saldo*bunga
+		var saldo=saldo+laba
+
+	}
+if (document.getElementById('waktu').value)=='0'{
+	alert('uang anda tetap seperti biasa '+(document.getElementById('saldo').value))
+}
+	var b=bulan+1
+	arrayHasil[bulan]='uang kamu bulan '+b+ ' adalah Rp '+(saldo.toFixed(3));
+}
+}
+var arrayHasil1=arrayHasil.map(function(r){
+	return r+' tambahan'
+})
+console.log(arrayHasil1.join('\n'))
+document.getElementById('tempatHasil').value=arrayHasil.join('\n')
+
+}
+// }
+function hapus(){
+	document.getElementById('bunga').value=''
+	document.getElementById('saldo').value=''
+	document.getElementById('waktu').value=''
+	document.getElementById('tempatHasil').value=''
+}
+</SCRIPT>
+
+<style>
+	body{
+		background:linear-gradient(to right,#ef0010,#4100be);
+	}
+</style>
+
+<p align="center" weight='3'><b>Halaman Penghitung Bunga Bank</b></p><br>
+
+<div align="center">
+<table>
+	<tr>
+		<td>Data input :</td>
+	</tr>
+	<tr>
+		<td>Saldo</td>
+		<td>: <input type="text" id="saldo"></td>
+	</tr>
+		<tr>
+		<td>Bunga</td>
+		<td>: <input type="text" id="bunga"> (%)</td>
+	</tr>
+		<tr>
+		<td>Waktu</td>
+		<td>: <input type="text" id="waktu"> (Bulan)</td>
+	</tr>
+</table>
+</div><br>
+
+<div align='center'>
+	<input type="button" id="hitung" value='hitung' onclick="hitung()">
+	<input type="reset" id="hapus" name='hapus' onclick="hapus()">
+</div><br><br>
+<div align="center">
+<textarea id='tempatHasil' align='center' rows='8' cols='40%'></textarea>
+</div>
+<!-- </form> -->
+</body>
+</html>
