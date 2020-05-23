@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="kalkulator.css">
+	</link>
+	<script type="text/javascript" src="kalkulator.js"></script>
+</head>
+<body>
+<!-- <div class="layar"></div> -->
+<div class="main">
+<form name="form">
+	<input class="textview" type="" name="textview">
+</form>
+<table class="oke">
+	<tr>
+		<td><input type="button" name="" class="tombol" value="C" onclick="C() "></td>
+		<td><input type="button" name="" class="tombol" value="<" onclick="del()"></td>
+		<td><input type="button" name="" class="tombol" value="/" onclick="masuk('/')"></td>
+		<td><input type="button" name="" class="tombol" value="*" onclick="masuk('*')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" class="tombol" value="7" onclick="masuk(7)"></td>
+		<td><input type="button" name="" class="tombol" value="8" onclick="masuk(8)"></td>
+		<td><input type="button" name="" class="tombol" value="9" onclick="masuk(9)"></td>
+		<td><input type="button" name="" class="tombol" value="-" onclick="masuk('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" class="tombol" value="4" onclick="masuk(4)"></td>
+		<td><input type="button" name="" class="tombol" value="5" onclick="masuk(5)"></td>
+		<td><input type="button" name="" class="tombol" value="6" onclick="masuk(6)"></td>
+		<td><input type="button" name="" class="tombol" value="+" onclick="masuk('+')" onclick="masuk('+')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" class="tombol" value="1" onclick="masuk(1)"></td>
+		<td><input type="button" name="" class="tombol" value="2" onclick="masuk(2)"></td>
+		<td><input type="button" name="" class="tombol" value="3" onclick="masuk(3)"></td>
+		<td rowspan=5><input type="button" name="" class="tombol ks" value="=" onclick="equal()"></td>
+	</tr>
+	<tr>
+		<td colspan=2><input style="width:100" type="button" name="" class="tombol k0" value="0" onclick="masuk(0)"></td>
+		<td><input type="button" name="" class="tombol" value="."  onclick="masuk('.')"></td>
+	</tr>
+</table>
+</div>
+<div>	
+<p>	</p>
+</div>
+</body>
+</html>
