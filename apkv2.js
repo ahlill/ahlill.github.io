@@ -154,8 +154,8 @@ const vk = Math.pow(kecepatan_aliran1,2).toFixed(ketelitian)
 const fket = f.toFixed(ketelitian)
 // Jawaban
 const jawaban =`Jawaban : \n
-					A = π/4*d
-					A = 3.14/4*${d_pipa} 
+					A = π/4*d^2
+					A = 3.14/4*${Math.pow(d_pipa,2).toFixed(ketelitian)} 
 					A = ${a.toFixed(ketelitian)} \n
 					v = Q/A
 					v = (${d_aliranh}/3600)*${a.toFixed(ketelitian)}
