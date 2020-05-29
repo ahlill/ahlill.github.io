@@ -16,11 +16,11 @@ var	d_pipamm=parseFloat(document.input.d_pipa.value),
 		viskositas=parseFloat(document.input.viskositas.value),
 		belokan_45_derajat=parseFloat(document.input.belokan_45_derajat.value),
 		belokan_90_derajat=parseFloat(document.input.belokan_90_derajat.value),
-		d_pipa_barumm=parseFloat(document.input.diameter_pipa_baru.value),
+		d_pipa_barumm=parseFloat(document.input.diameter_pipa_baru.value);
 		// hasil
 		// kecepatan_aliran=parseFloat(document.hasil.kecepatan_aliran.value),
 		// reynold=parseFloat(document.hasil.reynold.value),
-		jenis_aliran=(document.hasil.jenis_aliran.value);
+// 		jenis_aliran=(document.hasil.jenis_aliran.value),
 		// koefisient_gesekan_pipa=parseFloat(document.hasil.koefisient_gesekan_pipa.value),
 		// le=parseFloat(document.hasil.le.value),
 		// kHeadloss_gerbang=parseFloat(document.hasil.kHeadloss_gerbang.value),
@@ -60,7 +60,7 @@ if (reynold1<2300){
 }else{
 	document.hasil.jenis_aliran.value="TURBULEN"
 }
-
+const jenis_aliran=(document.hasil.jenis_aliran.value)
 
 //Entrance Length
 const le=(reynold1<2300)? 138*d_pipa:35*d_pipa
