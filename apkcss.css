@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:linear-gradient(120deg,#0040ff,cyan);
+
+}
+
+.input,.hasil{
+	background:#9db662;
+	width:auto;
+	font-family:"sans-serif";
+	font-size: normal;
+	/*position: relative;*/
+	/*padding-left: 10px;*/
+
+}
+
+.induk{
+	margin:20px;
+}
+table p{
+	padding-left: 5px;
+	margin-left: 5px;
+}
+
+input{
+	padding:1.5px;
+	padding-left: 5px;
+}
+
+input{
+	width:100px;
+}
+
+.hasil{
+	padding: 30px; 
+}
+
+.input{
+	padding:30px;
+}
+
+.tombol{
+	width:60px;
+	margin:20px 0;
+	position: relative;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%)translateY(-50%);
+}
+
+.parameter-input{
+	height:auto;
+}
+
+.pk{
+	color:red;
+}
