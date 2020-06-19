@@ -77,9 +77,9 @@ input{
 	color:normal;
 }
 /*responsive*/
-@media (max-width: 600px){
+@media (max-width: 800px){
 	.induk{
-		margin:10px;
+		margin:10%;
 		width:80%;
 	}
 }
