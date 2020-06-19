@@ -76,3 +76,10 @@ input{
 .pk{
 	color:normal;
 }
+/*responsive*/
+@media (max-width: 720px){
+	.induk{
+		width:100%;
+		background-color: red;
+	}
+}
