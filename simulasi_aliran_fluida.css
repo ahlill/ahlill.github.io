@@ -79,7 +79,7 @@ input{
 /*responsive*/
 @media (max-width: 800px){
 	.induk{
-		margin:auto;
+		margin:0;
 		width:auto;
 	}
 }
