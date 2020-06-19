@@ -78,7 +78,8 @@ input{
 }
 /*responsive*/
 @media (max-width: 721px){
-	.induk .header{
+	.induk{
+		margin:10px;
 		width:80%;
 	}
 }
