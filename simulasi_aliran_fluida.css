@@ -79,7 +79,7 @@ input{
 	color:normal;
 }
 
-@media (max-width:1001px){
+@media (max-width:720px){
 	.induk{
 		width:auto;
 	}
