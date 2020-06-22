@@ -68,12 +68,12 @@ input{
 	transform: translateX(-50%)translateY(-50%);
 }
 .tombol:hover{
-	background-color: green;
+	background-color: #adff2f;
 }
 
-/*.parameter-input,.hasil,.jawaban{
-	width:auto;
-}*/
+.input{
+	padding:0;
+}
 
 .pk{
 	color:normal;
