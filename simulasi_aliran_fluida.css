@@ -71,10 +71,6 @@ input{
 	background-color: #adff2f;
 }
 
-.input{
-	padding:0;
-}
-
 .pk{
 	color:normal;
 }
@@ -84,4 +80,7 @@ input{
 		width:auto;
 	}
 	
+	.input{
+	padding:0;
+	}	
 }
