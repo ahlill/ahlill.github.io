@@ -81,8 +81,7 @@ input{
 
 @media (max-width:1001px){
 	.induk{
-		width:100%;
-		background-color: red;
+		width:auto;
 	}
 	
 }
