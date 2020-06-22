@@ -27,16 +27,24 @@ body{
 
 .input,.hasil{
 	background:#9db662;
-	width:400px;
+	width:100%;
 	font-family:"sans-serif";
 	font-size: normal;
+	padding: 10px; 
 
+}
+
+.jawaban{
+	font-family:"arial";
+	font-size: 12px;
+	width:100%;
 }
 
 .induk{
 	/*margin:20px;*/
 	width:100%;
 	margin-top: 60px;
+	padding-bottom: 30px;
 	display:flex;
 	justify-content: center;
 }
@@ -51,14 +59,6 @@ input{
 	width:90px;
 }
 
-.hasil{
-	padding: 30px; 
-}
-
-.input{
-	padding:30px;
-}
-
 .tombol{
 	width:60px;
 	margin:20px 0;
@@ -71,18 +71,18 @@ input{
 	background-color: green;
 }
 
-.parameter-input,.hasil,.jawaban{
+/*.parameter-input,.hasil,.jawaban{
 	width:auto;
-}
+}*/
 
 .pk{
 	color:normal;
 }
 
-@media (max-width:721px){
+@media (max-width:1001px){
 	.induk{
 		width:100%;
-		background-color:red;
+		background-color: red;
 	}
 	
 }
