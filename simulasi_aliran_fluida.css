@@ -13,7 +13,8 @@ body{
 	z-index: 1;
 	width:100%;
 	height:45px;
-	background-color:  #34495e ;
+	background:linear-gradient(120deg,#782287,#e2071d);
+/* 	background-color:  #34495e ; */
 
 }
 .pHeader{
